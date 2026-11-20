@@ -1,5 +1,7 @@
 # agent-evals
 
+[![CI](https://github.com/AmeesAnsari/agent-evals/actions/workflows/ci.yml/badge.svg)](https://github.com/AmeesAnsari/agent-evals/actions/workflows/ci.yml) ![Python 3.10+](https://img.shields.io/badge/python-3.10%2B-blue) [![License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
+
 A small eval harness for **tool-using agents**. It checks what the agent said, **what it did** (which tools, in what order), and **what it cost**, over repeated trials, because agents don't give the same answer twice.
 
 Most LLM eval tools score the final text. Agents fail in the middle: they skip a step, call the wrong tool, follow an instruction hidden in a log line, or take three times as many turns as last week. This harness makes those failures visible and can block a merge on them.
